@@ -89,7 +89,7 @@ const websiteProjects = {
     "website-one": {
         title: "Virtue Care LLC",
 
-        address: "virtuecarellc.com",
+        address: "virtuecare.net",
 
         overview:
             "Virtue Care LLC provides assisted living and specialized care services in the Denver metropolitan area. I maintained and enhanced the website to improve its service content, organization, navigation, responsiveness, user experience, and search visibility.",
@@ -544,143 +544,215 @@ const websiteModalLink =
     document.getElementById("websiteModalLink");
 
 
+function openWebsiteProject(projectId) {
+    const project =
+        websiteProjects[projectId];
+
+    if (!project) {
+        return;
+    }
+
+    websiteModalTitle.textContent =
+        project.title;
+
+    websiteModalAddress.textContent =
+        project.address;
+
+    websiteModalOverview.textContent =
+        project.overview;
+
+    websiteModalContribution.innerHTML = "";
+
+    project.contribution.forEach((item) => {
+        const listItem =
+            document.createElement("li");
+
+        listItem.textContent = item;
+
+        websiteModalContribution.appendChild(
+            listItem
+        );
+    });
+
+    websiteModalTools.innerHTML = "";
+
+    project.tools.forEach((tool) => {
+        const toolTag =
+            document.createElement("span");
+
+        toolTag.textContent = tool;
+
+        websiteModalTools.appendChild(toolTag);
+    });
+
+
+    /* Update website screenshot */
+
+    if (websiteModalImage) {
+        if (project.image) {
+            websiteModalImage.src =
+                project.image;
+
+            websiteModalImage.alt =
+                `${project.title} website homepage preview`;
+
+            websiteModalImage.style.display =
+                "block";
+        } else {
+            websiteModalImage.removeAttribute(
+                "src"
+            );
+
+            websiteModalImage.alt = "";
+
+            websiteModalImage.style.display =
+                "none";
+        }
+    }
+
+
+    /* Update live website button */
+
+    if (websiteModalLink) {
+        if (project.link) {
+            websiteModalLink.href =
+                project.link;
+
+            websiteModalLink.textContent =
+                "Visit Live Website";
+
+            websiteModalLink.classList.remove(
+                "disabled-link"
+            );
+
+            websiteModalLink.removeAttribute(
+                "aria-disabled"
+            );
+
+            websiteModalLink.removeAttribute(
+                "tabindex"
+            );
+
+            websiteModalLink.setAttribute(
+                "target",
+                "_blank"
+            );
+
+            websiteModalLink.setAttribute(
+                "rel",
+                "noopener noreferrer"
+            );
+        } else {
+            websiteModalLink.href = "#";
+
+            websiteModalLink.textContent =
+                "Live website coming soon";
+
+            websiteModalLink.classList.add(
+                "disabled-link"
+            );
+
+            websiteModalLink.setAttribute(
+                "aria-disabled",
+                "true"
+            );
+
+            websiteModalLink.setAttribute(
+                "tabindex",
+                "-1"
+            );
+
+            websiteModalLink.removeAttribute(
+                "target"
+            );
+
+            websiteModalLink.removeAttribute(
+                "rel"
+            );
+        }
+    }
+
+    openPortfolioModal(websiteModal);
+}
+
+
+/* Project Details buttons */
+
 document
     .querySelectorAll(".website-details-button")
     .forEach((button) => {
-        button.addEventListener("click", () => {
-            const projectId =
-                button.dataset.project;
+        button.addEventListener("click", (event) => {
+            event.stopPropagation();
 
-            const project =
-                websiteProjects[projectId];
+            openWebsiteProject(
+                button.dataset.project
+            );
+        });
+    });
 
-            if (!project) {
+
+/* Entire website cards */
+
+document
+    .querySelectorAll(".website-card")
+    .forEach((card) => {
+        const detailsButton =
+            card.querySelector(
+                ".website-details-button"
+            );
+
+        if (!detailsButton) {
+            return;
+        }
+
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
+
+        card.addEventListener("click", (event) => {
+            /*
+             * Keep the live-site link working normally.
+             */
+            if (
+                event.target.closest(
+                    ".portfolio-icon-link"
+                )
+            ) {
                 return;
             }
 
-            websiteModalTitle.textContent =
-                project.title;
+            openWebsiteProject(
+                detailsButton.dataset.project
+            );
+        });
 
-            websiteModalAddress.textContent =
-                project.address;
-
-            websiteModalOverview.textContent =
-                project.overview;
-
-            websiteModalContribution.innerHTML = "";
-
-            project.contribution.forEach((item) => {
-                const listItem =
-                    document.createElement("li");
-
-                listItem.textContent = item;
-
-                websiteModalContribution.appendChild(
-                    listItem
-                );
-            });
-
-            websiteModalTools.innerHTML = "";
-
-            project.tools.forEach((tool) => {
-                const toolTag =
-                    document.createElement("span");
-
-                toolTag.textContent = tool;
-
-                websiteModalTools.appendChild(toolTag);
-            });
-
-
-            /* Update website screenshot */
-
-            if (websiteModalImage) {
-                if (project.image) {
-                    websiteModalImage.src =
-                        project.image;
-
-                    websiteModalImage.alt =
-                        `${project.title} website homepage preview`;
-
-                    websiteModalImage.style.display =
-                        "block";
-                } else {
-                    websiteModalImage.removeAttribute(
-                        "src"
-                    );
-
-                    websiteModalImage.alt = "";
-
-                    websiteModalImage.style.display =
-                        "none";
-                }
+        card.addEventListener("keydown", (event) => {
+            if (
+                event.key !== "Enter" &&
+                event.key !== " "
+            ) {
+                return;
             }
 
-
-            /* Update live website button */
-
-            if (websiteModalLink) {
-                if (project.link) {
-                    websiteModalLink.href =
-                        project.link;
-
-                    websiteModalLink.textContent =
-                        "Visit Live Website";
-
-                    websiteModalLink.classList.remove(
-                        "disabled-link"
-                    );
-
-                    websiteModalLink.removeAttribute(
-                        "aria-disabled"
-                    );
-
-                    websiteModalLink.removeAttribute(
-                        "tabindex"
-                    );
-
-                    websiteModalLink.setAttribute(
-                        "target",
-                        "_blank"
-                    );
-
-                    websiteModalLink.setAttribute(
-                        "rel",
-                        "noopener noreferrer"
-                    );
-                } else {
-                    websiteModalLink.href = "#";
-
-                    websiteModalLink.textContent =
-                        "Live website coming soon";
-
-                    websiteModalLink.classList.add(
-                        "disabled-link"
-                    );
-
-                    websiteModalLink.setAttribute(
-                        "aria-disabled",
-                        "true"
-                    );
-
-                    websiteModalLink.setAttribute(
-                        "tabindex",
-                        "-1"
-                    );
-
-                    websiteModalLink.removeAttribute(
-                        "target"
-                    );
-
-                    websiteModalLink.removeAttribute(
-                        "rel"
-                    );
-                }
+            /*
+             * Do not activate the card when a nested
+             * link or button already has keyboard focus.
+             */
+            if (
+                event.target.closest(
+                    "a, button"
+                )
+            ) {
+                return;
             }
 
-            openPortfolioModal(websiteModal);
+            event.preventDefault();
+
+            openWebsiteProject(
+                detailsButton.dataset.project
+            );
         });
     });
+
 
 /* =========================================================
    VIDEO MODAL
