@@ -3550,3 +3550,108 @@ body.portfolio-modal-active {
         transform: none;
     }
 }
+
+/*==========================================
+BACK TO TOP BUTTON
+==========================================*/
+
+.back-to-top {
+
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    box-shadow:
+        0 12px 30px rgba(159, 0, 69, .25);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateY(20px) scale(.9);
+
+    transition:
+        opacity .35s,
+        transform .35s,
+        visibility .35s,
+        background .25s;
+}
+
+.back-to-top:hover {
+
+    background: var(--primary-dark);
+
+    transform:
+        translateY(-4px) scale(1.05);
+
+}
+
+.back-to-top.show {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+        translateY(0) scale(1);
+
+}
+
+.back-to-top svg {
+
+    width: 22px;
+    height: 22px;
+
+}
+
+
+/* Tablet */
+
+@media(max-width:768px) {
+
+    .back-to-top {
+
+        right: 20px;
+        bottom: 20px;
+
+        width: 52px;
+        height: 52px;
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media(max-width:480px) {
+
+    .back-to-top {
+
+        right: 16px;
+        bottom: 16px;
+
+        width: 48px;
+        height: 48px;
+
+    }
+
+}
