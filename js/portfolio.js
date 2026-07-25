@@ -87,22 +87,34 @@ const graphicGalleries = {
 
 const websiteProjects = {
     "website-one": {
-        title: "Website Project One",
-        address: "project-one.com",
+        title: "Virtue Care LLC",
+
+        address: "virtuecarellc.com",
+
         overview:
-            "Temporary overview for your first website project. Explain the business, website purpose and the problem you helped solve.",
+            "Virtue Care LLC provides assisted living and specialized care services in the Denver metropolitan area. I maintained and enhanced the website to improve its service content, organization, navigation, responsiveness, user experience, and search visibility.",
+
         contribution: [
-            "Responsive WordPress page development",
-            "Website content implementation",
-            "Custom CSS and layout improvements",
-            "On-page SEO and quality assurance"
+            "Maintained and updated the WordPress website using Elementor",
+            "Created and improved healthcare service pages",
+            "Implemented on-page SEO improvements",
+            "Improved website navigation and content organization",
+            "Added and optimized relevant internal links",
+            "Improved responsiveness across desktop, tablet, and mobile",
+            "Performed content updates, testing, and quality assurance"
         ],
+
         tools: [
             "WordPress",
+            "Elementor",
             "HTML",
             "CSS",
-            "SEO"
-        ]
+            "SEO",
+            "AIOSEO"
+        ],
+
+        image: "assets/virtue-care.png",
+        link: "https://virtuecare.net"
     },
 
     "website-two": {
@@ -525,6 +537,12 @@ const websiteModalContribution =
 const websiteModalTools =
     document.getElementById("websiteModalTools");
 
+const websiteModalImage =
+    document.getElementById("websiteModalImage");
+
+const websiteModalLink =
+    document.getElementById("websiteModalLink");
+
 
 document
     .querySelectorAll(".website-details-button")
@@ -573,10 +591,96 @@ document
                 websiteModalTools.appendChild(toolTag);
             });
 
+
+            /* Update website screenshot */
+
+            if (websiteModalImage) {
+                if (project.image) {
+                    websiteModalImage.src =
+                        project.image;
+
+                    websiteModalImage.alt =
+                        `${project.title} website homepage preview`;
+
+                    websiteModalImage.style.display =
+                        "block";
+                } else {
+                    websiteModalImage.removeAttribute(
+                        "src"
+                    );
+
+                    websiteModalImage.alt = "";
+
+                    websiteModalImage.style.display =
+                        "none";
+                }
+            }
+
+
+            /* Update live website button */
+
+            if (websiteModalLink) {
+                if (project.link) {
+                    websiteModalLink.href =
+                        project.link;
+
+                    websiteModalLink.textContent =
+                        "Visit Live Website";
+
+                    websiteModalLink.classList.remove(
+                        "disabled-link"
+                    );
+
+                    websiteModalLink.removeAttribute(
+                        "aria-disabled"
+                    );
+
+                    websiteModalLink.removeAttribute(
+                        "tabindex"
+                    );
+
+                    websiteModalLink.setAttribute(
+                        "target",
+                        "_blank"
+                    );
+
+                    websiteModalLink.setAttribute(
+                        "rel",
+                        "noopener noreferrer"
+                    );
+                } else {
+                    websiteModalLink.href = "#";
+
+                    websiteModalLink.textContent =
+                        "Live website coming soon";
+
+                    websiteModalLink.classList.add(
+                        "disabled-link"
+                    );
+
+                    websiteModalLink.setAttribute(
+                        "aria-disabled",
+                        "true"
+                    );
+
+                    websiteModalLink.setAttribute(
+                        "tabindex",
+                        "-1"
+                    );
+
+                    websiteModalLink.removeAttribute(
+                        "target"
+                    );
+
+                    websiteModalLink.removeAttribute(
+                        "rel"
+                    );
+                }
+            }
+
             openPortfolioModal(websiteModal);
         });
     });
-
 
 /* =========================================================
    VIDEO MODAL
