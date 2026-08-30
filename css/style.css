@@ -7210,3 +7210,11 @@ BACK TO TOP BUTTON
         line-height: 1.65;
     }
 }
+
+/* =========================================
+   PORTFOLIO FILTER
+========================================= */
+
+.portfolio-category-block.category-hidden {
+    display: none !important;
+}
