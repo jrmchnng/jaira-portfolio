@@ -144,32 +144,62 @@ const graphicGalleries = {
             {
                 image: "assets/graphics/personal-tiktok/personal-1.png",
                 title: "Personal TikTok Design 01",
-                description:
-                    "Personal creative graphic designed for TikTok."
+                description: "Personal creative graphic designed for TikTok."
             },
             {
                 image: "assets/graphics/personal-tiktok/personal-2.png",
                 title: "Personal TikTok Design 02",
-                description:
-                    "Personal social media visual project."
+                description: "Personal social media visual project."
             },
             {
                 image: "assets/graphics/personal-tiktok/personal-3.png",
                 title: "Personal TikTok Design 03",
-                description:
-                    "Creative content designed for TikTok."
+                description: "Creative content designed for TikTok."
             },
             {
                 image: "assets/graphics/personal-tiktok/personal-4.png",
                 title: "Personal TikTok Design 04",
-                description:
-                    "Personal visual design project."
+                description: "Personal visual design project."
             },
             {
                 image: "assets/graphics/personal-tiktok/personal-5.png",
                 title: "Personal TikTok Design 05",
-                description:
-                    "Creative social media graphic."
+                description: "Creative social media graphic."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-6.png",
+                title: "Personal TikTok Design 06",
+                description: "Personal creative content designed for social media."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-7.png",
+                title: "Personal TikTok Design 07",
+                description: "Creative TikTok visual design project."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-8.png",
+                title: "Personal TikTok Design 08",
+                description: "Personal social media graphic design."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-9.png",
+                title: "Personal TikTok Design 09",
+                description: "Creative visual content designed for TikTok."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-10.png",
+                title: "Personal TikTok Design 10",
+                description: "Personal TikTok content design project."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-11.png",
+                title: "Personal TikTok Design 11",
+                description: "Creative social media visual project."
+            },
+            {
+                image: "assets/graphics/personal-tiktok/personal-12.png",
+                title: "Personal TikTok Design 12",
+                description: "Personal creative graphic designed for TikTok."
             }
         ]
     }
