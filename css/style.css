@@ -7145,3 +7145,68 @@ BACK TO TOP BUTTON
     }
 
 }
+
+/* =========================================
+   GRAPHIC COLLECTIONS — MOBILE FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    .graphic-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .graphic-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .graphic-collection-button {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make preview square for social graphics */
+    .graphic-stack {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+    }
+
+    .graphic-stack-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .graphic-stack-front {
+        overflow: hidden;
+    }
+
+    /* IMPORTANT: don't crop the actual design */
+    .graphic-stack-front img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        object-position: center;
+
+        background: #fdf6f9;
+        border-radius: inherit;
+    }
+
+    .graphic-card-content {
+        padding-top: 18px;
+    }
+
+    .graphic-card-content h4 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .graphic-card-content p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
