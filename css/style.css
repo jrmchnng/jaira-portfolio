@@ -2085,6 +2085,57 @@ a.about-detail:hover {
     margin-bottom: 20px;
 }
 
+.graphic-stack-front {
+    overflow: hidden;
+}
+
+.graphic-stack-front img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+.gallery-main-image {
+    width: 100%;
+    height: 545px;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+#galleryImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .gallery-main-image {
+        height: 430px;
+    }
+}
+
+@media (max-width: 650px) {
+    .gallery-main-image {
+        height: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-main-image {
+        height: 280px;
+    }
+}
+
 .graphic-stack-item {
     position: absolute;
     inset: 0;
