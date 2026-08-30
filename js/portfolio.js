@@ -211,7 +211,16 @@ const graphicGalleries = {
    WEBSITE PROJECTS
 ========================================================= */
 
+/* =========================================================
+   WEBSITE PROJECTS
+========================================================= */
+
 const websiteProjects = {
+
+    /* =====================================================
+       VIRTUE CARE
+       KEEP YOUR EXISTING VIRTUE CARE CODE HERE
+    ===================================================== */
 
     "website-one": {
         title: "Virtue Care LLC",
@@ -245,53 +254,225 @@ const websiteProjects = {
     },
 
 
+    /* =====================================================
+       ZEN WEB SERVICES
+    ===================================================== */
+
     "website-two": {
-        title: "Website Project Two",
+        title: "Zen Web Services",
 
-        address: "project-two.com",
-
-        overview:
-            "Temporary overview for your second website project. Replace this with a concise project description.",
-
-        contribution: [
-            "Website redesign and page customization",
-            "Mobile and tablet responsiveness",
-            "Content formatting",
-            "SEO metadata and internal links"
-        ],
-
-        tools: [
-            "WordPress",
-            "Elementor",
-            "Canva",
-            "Rank Math"
-        ]
-    },
-
-
-    "website-three": {
-        title: "Website Project Three",
-
-        address: "project-three.com",
+        address: "zenwebservices.com",
 
         overview:
-            "Temporary overview for another website, landing page or personal development project.",
+            "Zen Web Services provides website design, development, SEO, hosting, and digital services. I support the ongoing development and management of the WordPress website, including service pages, SEO-focused landing pages, navigation improvements, responsive updates, content optimization, and website quality assurance.",
 
         contribution: [
-            "Page layout development",
-            "Custom styling",
-            "Website maintenance",
-            "Content updates and testing"
+            "Created and improved WordPress service and landing pages",
+            "Built and updated SEO-focused website sections",
+            "Improved desktop, tablet, and mobile responsiveness",
+            "Restructured service and SEO navigation",
+            "Updated website content and page layouts",
+            "Implemented on-page SEO improvements",
+            "Added and optimized relevant internal links",
+            "Performed website testing and quality assurance"
         ],
 
         tools: [
             "WordPress",
             "Beaver Builder",
             "HTML",
-            "CSS"
-        ]
-    }
+            "CSS",
+            "SEO",
+            "Rank Math"
+        ],
 
+        image: "assets/websites/zen-web-services.png",
+        link: "https://zenwebservices.com"
+    },
+
+
+    /* =====================================================
+       ZEN TECHNOLOGY SOLUTIONS / ZENSECUR
+    ===================================================== */
+
+    "website-three": {
+        title: "Zen Technology Solutions / ZenSecur",
+
+        address: "zensecur.com",
+
+        overview:
+            "Zen Technology Solutions provides managed IT, cybersecurity, and technology services. I worked on the development and redesign of the website to create clearer service-focused pages, improve responsive layouts, organize technical content, and strengthen the presentation of security and compliance services.",
+
+        contribution: [
+            "Developed and redesigned WordPress website sections",
+            "Created service-focused page layouts",
+            "Built and improved the Endpoint Management page",
+            "Created responsive tabs, accordions, and content sections",
+            "Improved calls-to-action and service presentation",
+            "Organized security and compliance-focused content",
+            "Improved desktop, tablet, and mobile responsiveness",
+            "Performed website testing and layout quality assurance"
+        ],
+
+        tools: [
+            "WordPress",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "SEO"
+        ],
+
+        image: "assets/websites/zensecur.png",
+        link: "https://zensecur.com"
+    },
+
+
+    /* =====================================================
+       SECURALYNX
+    ===================================================== */
+
+    "website-four": {
+        title: "SecuraLynx",
+
+        address: "securalynx.com",
+
+        overview:
+            "SecuraLynx provides cybersecurity solutions and security-focused business services. I support the website through content management, SEO improvements, blog publishing, internal linking, and ongoing updates that help present cybersecurity information clearly and professionally.",
+
+        contribution: [
+            "Published and formatted cybersecurity blog content",
+            "Updated website content and page information",
+            "Implemented on-page SEO improvements",
+            "Added relevant internal links",
+            "Reviewed content formatting and readability",
+            "Organized blog and website content",
+            "Checked external references and authoritative sources",
+            "Performed publishing and website quality assurance"
+        ],
+
+        tools: [
+            "WordPress",
+            "SEO",
+            "HTML",
+            "CSS",
+            "AIOSEO"
+        ],
+
+        image: "assets/websites/securalynx.png",
+        link: "https://securalynx.com"
+    },
+
+
+    /* =====================================================
+       MY HOLY HOST
+    ===================================================== */
+
+    "website-five": {
+        title: "My Holy Host",
+
+        address: "myholyhost.com",
+
+        overview:
+            "My Holy Host is a Catholic content and e-commerce brand. I support both its WordPress content platform and Shopify store, including editorial publishing, SEO, internal linking, product management, collection organization, and large-scale product import preparation.",
+
+        contribution: [
+            "Built and set up the Shopify website and store structure",
+            "Created and organized Shopify products and collections",
+            "Managed product variants, SKUs, handles, images, and tags",
+            "Prepared bulk product imports using Matrixify",
+            "Reviewed artwork information and product metadata",
+            "Checked products for duplicate listings",
+            "Published and formatted Catholic articles in WordPress",
+            "Added internal links to related articles, Bible chapters, and resources",
+            "Reviewed content for formatting, readability, and consistency"
+        ],
+
+        tools: [
+            "Shopify",
+            "Matrixify",
+            "WordPress",
+            "SEO",
+            "Excel"
+        ],
+
+        image: "assets/websites/my-holy-host.png",
+        link: "https://myholyhost.com"
+    },
+
+
+    /* =====================================================
+       UNIQUE STAYS / AUX BOX MUSKOKA
+    ===================================================== */
+
+    "website-six": {
+        title: "Unique Stays / Aux Box Muskoka",
+
+        address: "uniquestays.ca",
+
+        overview:
+            "Unique Stays showcases distinctive vacation rental properties in Muskoka. I worked on property website improvements and content presentation, including responsive layouts, property information, photo galleries, sleeping arrangements, amenities, and feature sections.",
+
+        contribution: [
+            "Updated and improved WordPress property pages",
+            "Created an interactive property photo gallery",
+            "Organized and presented property photography",
+            "Updated property descriptions and content",
+            "Added sleeping arrangement information",
+            "Added amenities and property features",
+            "Created and updated Nordic Spa content",
+            "Improved responsive presentation across devices",
+            "Tested gallery interactions, navigation, and page layouts"
+        ],
+
+        tools: [
+            "WordPress",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive Design"
+        ],
+
+        image: "assets/websites/aux-box-muskoka.png",
+        link: "https://uniquestays.ca"
+    },
+
+    /* =====================================================
+   BLUESPOT ADVERTISING
+===================================================== */
+
+    "website-seven": {
+        title: "BlueSpot Advertising",
+
+        address: "BlueSpot Advertising",
+
+        overview:
+            "I worked as a Website Assistant for BlueSpot Advertising, providing ongoing WordPress website support and content updates. My work included managing and updating pages with Beaver Builder, adjusting website content and layouts, checking page elements, and helping maintain a consistent experience across desktop and mobile devices.",
+
+        contribution: [
+            "Provided ongoing WordPress website support",
+            "Updated and managed website pages using Beaver Builder",
+            "Updated and organized website content",
+            "Made page layout and content adjustments",
+            "Added and updated schema markup for improved search visibility",
+            "Assisted with website images, links, and page elements",
+            "Checked website pages for formatting and content accuracy",
+            "Performed basic website maintenance and updates",
+            "Reviewed website changes across desktop and mobile"
+        ],
+
+        tools: [
+            "WordPress",
+            "Beaver Builder",
+            "HTML",
+            "CSS",
+            "Schema Markup",
+            "Website Management",
+            "Responsive QA"
+        ],
+
+        image: "assets/websites/bluespot-advertising.png",
+        link: "https://bluespotguide.com/"
+    }
 };
 
 
