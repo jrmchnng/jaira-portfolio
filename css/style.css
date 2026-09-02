@@ -44,7 +44,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    scroll-padding-top: 24px;
 }
 
 body {
@@ -418,8 +418,6 @@ button:focus-visible {
 
     padding-left: calc(var(--sidebar-width) + 90px);
 
-    scroll-snap-align: start;
-    scroll-margin-top: 0;
 }
 
 
