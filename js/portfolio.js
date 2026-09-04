@@ -296,12 +296,12 @@ const websiteProjects = {
     ===================================================== */
 
     "website-three": {
-        title: "Zen Technology Solutions / ZenSecur",
+        title: "ZenSecur",
 
         address: "zensecur.com",
 
         overview:
-            "Zen Technology Solutions provides managed IT, cybersecurity, and technology services. I worked on the development and redesign of the website to create clearer service-focused pages, improve responsive layouts, organize technical content, and strengthen the presentation of security and compliance services.",
+            "ZenSecur provides managed IT, cybersecurity, and technology services. I worked on the development and redesign of the website to create clearer service-focused pages, improve responsive layouts, organize technical content, and strengthen the presentation of security and compliance services.",
 
         contribution: [
             "Developed and redesigned WordPress website sections",
@@ -405,7 +405,7 @@ const websiteProjects = {
     ===================================================== */
 
     "website-six": {
-        title: "Unique Stays / Aux Box Muskoka",
+        title: "Unique Stays",
 
         address: "uniquestays.ca",
 
@@ -441,12 +441,12 @@ const websiteProjects = {
 ===================================================== */
 
     "website-seven": {
-        title: "BlueSpot Advertising",
+        title: "BlueSpot Connect",
 
-        address: "BlueSpot Advertising",
+        address: "BlueSpot Connect",
 
         overview:
-            "I worked as a Website Assistant for BlueSpot Advertising, providing ongoing WordPress website support and content updates. My work included managing and updating pages with Beaver Builder, adjusting website content and layouts, checking page elements, and helping maintain a consistent experience across desktop and mobile devices.",
+            "I worked as a Website Assistant for BlueSpot Connect, providing ongoing WordPress website support and content updates. My work included managing and updating pages with Beaver Builder, adjusting website content and layouts, checking page elements, and helping maintain a consistent experience across desktop and mobile devices.",
 
         contribution: [
             "Provided ongoing WordPress website support",
