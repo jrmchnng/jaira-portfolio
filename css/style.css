@@ -7215,3 +7215,397 @@ BACK TO TOP BUTTON
 .portfolio-category-block.category-hidden {
     display: none !important;
 }
+
+/* =========================================
+   WEBSITE PORTFOLIO — RESPONSIVE PREVIEWS
+========================================= */
+
+.website-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.website-card {
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.browser-preview {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: #fff;
+}
+
+.browser-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 40px;
+    padding: 0 14px;
+}
+
+.browser-address {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.website-placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #fdf6f9;
+}
+
+/* Main website screenshot */
+.website-preview-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fdf6f9;
+}
+
+/* Keeps card content aligned */
+.portfolio-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio-card-content p {
+    flex-grow: 1;
+}
+
+.portfolio-card-actions {
+    margin-top: auto;
+}
+
+
+/* =========================================
+   LARGE LAPTOP / SMALL DESKTOP
+========================================= */
+
+@media (max-width: 1250px) {
+
+    .website-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .website-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .website-placeholder {
+        aspect-ratio: 16 / 10;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .website-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .website-card {
+        width: 100%;
+    }
+
+    .browser-preview {
+        border-radius: 16px;
+    }
+
+    .browser-toolbar {
+        min-height: 38px;
+        padding: 0 12px;
+    }
+
+    .browser-address {
+        font-size: 11px;
+    }
+
+    .website-placeholder {
+        aspect-ratio: 16 / 10;
+    }
+
+    .website-preview-image {
+        object-fit: contain;
+    }
+
+    .portfolio-card-content {
+        padding-top: 18px;
+    }
+
+    .portfolio-card-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .portfolio-card-content h4 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .portfolio-card-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .portfolio-card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .website-grid {
+        gap: 20px;
+    }
+
+    .website-placeholder {
+        aspect-ratio: 4 / 3;
+    }
+
+    .browser-toolbar {
+        min-height: 36px;
+    }
+
+    .browser-dots {
+        gap: 4px;
+    }
+
+    .browser-dots span {
+        width: 6px;
+        height: 6px;
+    }
+
+    .browser-address {
+        font-size: 10px;
+    }
+
+    .portfolio-card-content h4 {
+        font-size: 20px;
+    }
+
+    .portfolio-card-content p {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================
+   WEBSITE PROJECT MODAL — RESPONSIVE
+========================================= */
+
+#websiteModal .modal-dialog {
+    width: min(94vw, 1180px);
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 24px;
+}
+
+#websiteModal .website-modal-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 34px;
+    align-items: start;
+}
+
+
+/* =========================================
+   WEBSITE PREVIEW IMAGE
+========================================= */
+
+#websiteModal .website-modal-preview {
+    min-width: 0;
+}
+
+#websiteModal .browser-preview {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+#websiteModal .website-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    overflow: hidden;
+    background: #fdf6f9;
+}
+
+#websiteModalImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fdf6f9;
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+#websiteModal .website-modal-details {
+    min-width: 0;
+}
+
+#websiteModal .website-modal-details p,
+#websiteModal .website-modal-details li {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#websiteModal .website-modal-details ul {
+    margin-bottom: 20px;
+}
+
+#websiteModalTools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    #websiteModal .modal-dialog {
+        width: min(94vw, 760px);
+        max-height: 92vh;
+    }
+
+    #websiteModal .website-modal-layout {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    #websiteModal .website-placeholder {
+        aspect-ratio: 16 / 10;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    #websiteModal {
+        padding: 14px;
+    }
+
+    #websiteModal .modal-dialog {
+        width: 100%;
+        max-width: none;
+        max-height: 94vh;
+        border-radius: 20px;
+    }
+
+    #websiteModal .modal-content {
+        padding: 22px 18px;
+    }
+
+    #websiteModal .website-modal-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    #websiteModal .website-placeholder {
+        aspect-ratio: 4 / 3;
+    }
+
+    #websiteModalImage {
+        object-fit: contain;
+    }
+
+    #websiteModalTitle {
+        font-size: 28px;
+        line-height: 1.2;
+        padding-right: 48px;
+    }
+
+    #websiteModal .website-modal-details p,
+    #websiteModal .website-modal-details li {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    #websiteModalLink {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    #websiteModal {
+        padding: 10px;
+    }
+
+    #websiteModal .modal-content {
+        padding: 20px 15px;
+    }
+
+    #websiteModalTitle {
+        font-size: 24px;
+    }
+
+    #websiteModal .website-placeholder {
+        aspect-ratio: 1 / 1;
+    }
+
+    #websiteModalTools span {
+        font-size: 9px;
+        padding: 6px 9px;
+    }
+
+}

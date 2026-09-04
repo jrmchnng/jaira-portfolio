@@ -472,6 +472,40 @@ const websiteProjects = {
 
         image: "assets/websites/bluespot-advertising.png",
         link: "https://bluespotguide.com/"
+    },
+
+    "website-eight": {
+        title: "UQ Collision",
+
+        address: "UQ Collision",
+
+        overview:
+            "UQ Collision is an automotive collision repair business. I support the ongoing management and improvement of its website, including website updates, responsive improvements, local SEO and business profile optimization.",
+
+        contribution: [
+            "Provided ongoing website management and updates",
+            "Updated and maintained website content",
+            "Improved website responsiveness across desktop, tablet and mobile",
+            "Reviewed page layouts and website presentation",
+            "Supported local SEO optimization",
+            "Updated and optimized the BrightLocal business profile",
+            "Improved business profile information and content",
+            "Reviewed local search information for consistency",
+            "Performed website and responsive quality checks"
+        ],
+
+        tools: [
+            "WordPress",
+            "Website Management",
+            "Responsive Design",
+            "BrightLocal",
+            "Local SEO",
+            "SEO"
+        ],
+
+        image: "assets/websites/uq-collision.png",
+
+        link: ""
     }
 };
 
