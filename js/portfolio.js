@@ -505,7 +505,7 @@ const websiteProjects = {
 
         image: "assets/websites/uq-collision.png",
 
-        link: "uqcollision.com"
+        link: "https://uqcollision.com/"
     }
 };
 
