@@ -441,12 +441,12 @@ const websiteProjects = {
 ===================================================== */
 
     "website-seven": {
-        title: "BlueSpot Connect",
+        title: "BlueSpot Guide",
 
-        address: "BlueSpot Connect",
+        address: "bluespotguide.com",
 
         overview:
-            "I worked as a Website Assistant for BlueSpot Connect, providing ongoing WordPress website support and content updates. My work included managing and updating pages with Beaver Builder, adjusting website content and layouts, checking page elements, and helping maintain a consistent experience across desktop and mobile devices.",
+            "I worked as a Website Assistant for BlueSpot Guide, providing ongoing WordPress website support and content updates. My work included managing and updating pages with Beaver Builder, adjusting website content and layouts, checking page elements, and helping maintain a consistent experience across desktop and mobile devices.",
 
         contribution: [
             "Provided ongoing WordPress website support",
@@ -477,7 +477,7 @@ const websiteProjects = {
     "website-eight": {
         title: "UQ Collision",
 
-        address: "UQ Collision",
+        address: "uqcollision.com",
 
         overview:
             "UQ Collision is an automotive collision repair business. I support the ongoing management and improvement of its website, including website updates, responsive improvements, local SEO and business profile optimization.",
