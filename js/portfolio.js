@@ -362,40 +362,40 @@ const websiteProjects = {
         link: "https://securalynx.com"
     },
 
-
-    /* =====================================================
-       MY HOLY HOST
-    ===================================================== */
-
     "website-five": {
         title: "My Holy Host",
 
         address: "myholyhost.com",
 
         overview:
-            "My Holy Host is a Catholic content and e-commerce brand. I support both its WordPress content platform and Shopify store, including editorial publishing, SEO, internal linking, product management, collection organization, and large-scale product import preparation.",
+            "My Holy Host is a Catholic content website built on WordPress. I provide ongoing website, editorial, and SEO support by publishing and formatting articles, organizing content, improving internal linking, managing article series and categories, and maintaining consistent website presentation across the site.",
 
         contribution: [
-            "Built and set up the Shopify website and store structure",
-            "Created and organized Shopify products and collections",
-            "Managed product variants, SKUs, handles, images, and tags",
-            "Prepared bulk product imports using Matrixify",
-            "Reviewed artwork information and product metadata",
-            "Checked products for duplicate listings",
             "Published and formatted Catholic articles in WordPress",
-            "Added internal links to related articles, Bible chapters, and resources",
-            "Reviewed content for formatting, readability, and consistency"
+            "Managed and updated existing website content",
+            "Created and organized article categories and content series",
+            "Added internal links between related articles and resources",
+            "Linked Scripture references to relevant Bible chapter pages",
+            "Formatted Scripture passages and quotations for consistent presentation",
+            "Added and updated SEO titles and meta descriptions",
+            "Improved on-page SEO and content organization",
+            "Updated article navigation and related-content sections",
+            "Reviewed content for formatting, readability, and consistency",
+            "Performed ongoing website content management and quality assurance",
+            "Reviewed pages across desktop and mobile"
         ],
 
         tools: [
-            "Shopify",
-            "Matrixify",
             "WordPress",
             "SEO",
-            "Excel"
+            "HTML",
+            "CSS",
+            "Content Management",
+            "Website Management"
         ],
 
         image: "assets/websites/my-holy-host.png",
+
         link: "https://myholyhost.com"
     },
 
@@ -506,6 +506,45 @@ const websiteProjects = {
         image: "assets/websites/uq-collision.png",
 
         link: "https://uqcollision.com/"
+    },
+
+    "website-nine": {
+        title: "My Holy Host — Shopify Store",
+
+        address: "shop.myholyhost.com",
+
+        overview:
+            "My Holy Host is a Catholic e-commerce store built on Shopify. I built and set up the Shopify store, organized its product catalog, configured collections and navigation, managed product data and variants, and prepared large-scale product imports for the storefront.",
+
+        contribution: [
+            "Built and set up the Shopify store",
+            "Created and organized products and collections",
+            "Configured product titles, descriptions, tags and product information",
+            "Managed product variants, SKUs, handles and images",
+            "Prepared large-scale product imports using Matrixify",
+            "Reviewed product data and checked for duplicate listings",
+            "Organized automated collections and product conditions",
+            "Managed product and catalog organization",
+            "Configured and updated Shopify navigation",
+            "Supported storefront content and presentation",
+            "Connected the custom shop.myholyhost.com domain to the Shopify store",
+            "Configured the custom domain as the primary storefront domain",
+            "Reviewed the storefront across desktop and mobile",
+            "Performed product, navigation and storefront quality assurance"
+        ],
+
+        tools: [
+            "Shopify",
+            "Matrixify",
+            "E-Commerce",
+            "Product Management",
+            "Catalog Management",
+            "Excel"
+        ],
+
+        image: "assets/websites/shopify-my-holy-host.png",
+
+        link: "https://shop.myholyhost.com/"
     }
 };
 
